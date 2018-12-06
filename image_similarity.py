@@ -20,6 +20,7 @@ tar = tarfile.open(data_path, "r:gz")
 tar.extractall()
 tar.close()
 
+
 # load the reference data
 ska.log("Loading the images into a Turi Create SFrame", labels = ['image_similarity'])
 reference_data  = tc.image_analysis.load_images('./101_ObjectCategories')
