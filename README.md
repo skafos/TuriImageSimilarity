@@ -1,7 +1,12 @@
 # Turi Image Similarity
 
+<<<<<<< HEAD
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
+=======
+_This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com._
+>>>>>>> 9ac141c6e5ce98ca840303465a0770835e359d81
 
+The following repo contains code for training an image similarity model on Skafos using the Turi Create framework.
 As much as possible, the code in this repo mimicks Turi Create's image similarity example which can be found [here](https://apple.github.io/turicreate/docs/userguide/image_similarity/). 
 
 ## What is here?
