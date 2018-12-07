@@ -1,10 +1,6 @@
 # Turi Image Similarity
 
-<<<<<<< HEAD
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
-=======
-_This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com._
->>>>>>> 9ac141c6e5ce98ca840303465a0770835e359d81
 
 The following repo contains code for training an image similarity model on Skafos using the Turi Create framework.
 As much as possible, the code in this repo mimicks Turi Create's image similarity example which can be found [here](https://apple.github.io/turicreate/docs/userguide/image_similarity/). 
@@ -16,7 +12,7 @@ The two main components to this repo are:
 - `image_similarity.ipynb` - a python notebook with the same code as the above `image_similarity.py` job.
 
 Additionallly, there exist:
-- `metis.config.yml` - a file telling Skafos how execute the jobs in this project
+- `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
 
