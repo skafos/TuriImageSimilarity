@@ -10,11 +10,11 @@ ska = Skafos()
 data_url = "http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz";
 data_path = "101_ObjectCategories.tar.gz"
 
-# pull the tar
+# Fetch training data from Caltech's website
 ska.log("Retrieving the images from online", labels = ['image_similarity'])
 retrieve = urllib.request.urlretrieve(data_url, data_path)
 
-# extract the file
+# Extract the images from the downloaded file
 ska.log("Images downloaded, extracting the images", labels = ['image_similarity'])
 tar = tarfile.open(data_path, "r:gz")
 tar.extractall()
