@@ -15,6 +15,7 @@ Additionallly, there exist:
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
+- `images_in_turicreate.ipynb` - a notebook detailing how Turi Create likes to handle image data.
 
 ## Further notes:
 - To get this to run, the model required training data. The training data for this example comes from an open source data set from Caltech's Computer Vision dept which can be found [here](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz)
