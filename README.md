@@ -21,7 +21,7 @@ Additionallly, there exist:
 - For retraining this image similarity model on new data, we highly recommend doing it on a GPU. As benchmarks, we've found that training this Turi Create image similarity model takes about 60 minutes on a GPU and about 1.5 days on Skafos with 6 CPU's and 10G of memory. Training will take considerably more time locally using only CPU. GPU support on Skafos is currently in development and will be coming soon.
 
 ## Going beyond the example:
-- Turi Create has built in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
+- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
 
 
 #### Querying the model
