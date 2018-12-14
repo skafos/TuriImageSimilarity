@@ -15,7 +15,31 @@ Additionallly, there exist:
 - `metis.config.yml` - a file telling Skafos how to execute the jobs in this project
 - `requirements.txt` - a file telling Skafos the project's dependencies
 - `save_models.py` - a helper module to save the core ml model to Skafos
+- `images_in_turicreate.ipynb` - a notebook detailing how Turi Create likes to handle image data.
 
 ## Further notes:
 - To get this to run, the model required training data. The training data for this example comes from an open source data set from Caltech's Computer Vision dept which can be found [here](http://www.vision.caltech.edu/Image_Datasets/Caltech101/101_ObjectCategories.tar.gz)
 - For retraining this image similarity model on new data, we highly recommend doing it on a GPU. As benchmarks, we've found that training this Turi Create image similarity model takes about 60 minutes on a GPU and about 1.5 days on Skafos with 6 CPU's and 10G of memory. Training will take considerably more time locally using only CPU. GPU support on Skafos is currently in development and will be coming soon.
+
+## Going beyond the example:
+- If you wish to incorporate your own data, check out `images_in_turicreate.ipynb`. It will detail the format you should have your data in. It also includes several helper functions that might help you get your data into the Turi Create framework.
+- Turi Create has built-in model evaluation and prediction techniques. We've included some of the functions below but for more detailed description, refer to Turi Create's [documentation](https://apple.github.io/turicreate/docs/userguide/image_similarity/).
+
+
+#### Querying the model
+For the Image Similarity model, this includes the ability to query the model and find the k most similar images. This can be done by running:
+```python
+
+# query the model for the ten most similar images to the first 10 images
+query_results = model.query(reference_data[0:10], k=10)
+query_results.head()
+
+```
+
+#### Rendering and Exploring Images
+
+```python
+# assuming our training data is called reference_data
+reference_data.explore() # opens a window to explore our images
+
+```
