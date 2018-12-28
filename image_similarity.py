@@ -2,7 +2,7 @@ import urllib.request
 import tarfile
 import turicreate as tc
 from skafossdk import *
-import save_models as sm
+import common.save_models as sm
 import coremltools
 
 ska = Skafos()
