@@ -2,7 +2,7 @@
 
 _This public repository is designed for use in the Skafos ML delivery platform, which is available at metismachine.com. Use of this repo outside of the Skafos platform is not supported by Metis Machine._
 
-The following repo contains code for training an image similarity model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/image_similarity/). The example model is based on images from the popular open source images data set Caltech 101, containing images from 101 different categories.
+The following repo contains code for training an image similarity model on Skafos using the [Turi Create framework](https://apple.github.io/turicreate/docs/userguide/image_similarity/). The example model is based on images from the popular open source images data set Caltech 101, containing images from 101 different categories. To get a list of these categories, check out the final page of [this research paper](http://www.vision.caltech.edu/feifeili/Fei-Fei_GMBV04.pdf)
 
 ## What is here?
 
