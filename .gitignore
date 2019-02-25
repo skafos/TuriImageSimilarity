@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 *.mlmodel
 *.model
+*.idea/
